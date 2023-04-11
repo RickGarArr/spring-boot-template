@@ -29,11 +29,9 @@ dependencies {
 	compileOnly 'org.springframework.boot:spring-boot-devtools'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'junit:junit:4.13.2'
+	testImplementation 'org.mockito:mockito-core:1.+'
 
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
-
-// tasks.named('test') {
-// 	useJUnitPlatform()
-// }
