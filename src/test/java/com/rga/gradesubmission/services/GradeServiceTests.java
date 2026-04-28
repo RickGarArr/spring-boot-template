@@ -1,6 +1,6 @@
 package com.rga.gradesubmission.services;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 import java.time.LocalDate;
@@ -10,13 +10,13 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Optional;
 
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
+import org.mockito.junit.jupiter.MockitoExtension;
 import com.rga.gradesubmission.domain.entities.Course;
 import com.rga.gradesubmission.domain.entities.Grade;
 import com.rga.gradesubmission.domain.entities.Student;
@@ -26,7 +26,7 @@ import com.rga.gradesubmission.repository.GradeRepository;
 import com.rga.gradesubmission.repository.StudentRepository;
 import com.rga.gradesubmission.service.GradeServiceImpl;
 
-@RunWith(org.mockito.junit.MockitoJUnitRunner.class)
+@ExtendWith(MockitoExtension.class)
 public class GradeServiceTests {
 
     @Mock
@@ -43,7 +43,7 @@ public class GradeServiceTests {
 
     private LocalDate harryMockBirthday;
 
-    @Before
+    @BeforeEach
     public void setup() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(1997, Calendar.FEBRUARY, 7, 0, 0, 0);

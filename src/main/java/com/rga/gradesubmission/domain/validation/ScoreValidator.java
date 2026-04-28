@@ -3,8 +3,8 @@ package com.rga.gradesubmission.domain.validation;
 import java.util.Arrays;
 import java.util.List;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class ScoreValidator implements ConstraintValidator<Score, String> {
     

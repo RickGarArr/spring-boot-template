@@ -3,8 +3,8 @@ package com.rga.gradesubmission.domain.validation.email;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class CurpConstraintValidator implements ConstraintValidator<Curp, String> {
 
